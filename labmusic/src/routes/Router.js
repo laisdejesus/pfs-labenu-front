@@ -24,10 +24,10 @@ const Router = (props) => {
           <FeedPage />
         </Route>
         <Route exact path={"/music/create"}>
-          <MusicDetailPage />
+          <CreateMusicPage />
         </Route>
         <Route exact path={"/music/:id"}>
-          <CreateMusicPage />
+          <MusicDetailPage />
         </Route>
         <Route >
           <ErrorPage />
