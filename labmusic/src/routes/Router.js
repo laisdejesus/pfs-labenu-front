@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import LoginPage from '../pages/Login/LoginPage'
 import SignUpPage from '../pages/SignUp/SignUpPage'
 import FeedPage from '../pages/Feed/FeedPage'
+import CreateMusicPage from '../pages/CreateMusic/CreateMusicPage'
 import MusicDetailPage from '../pages/MusicDetail/MusicDetailPage'
 import ErrorPage from '../pages/Error/ErroPage'
 
@@ -22,8 +23,11 @@ const Router = (props) => {
         <Route exact path={"/music/all"}>
           <FeedPage />
         </Route>
-        <Route exact path={"/music/:id"}>
+        <Route exact path={"/music/create"}>
           <MusicDetailPage />
+        </Route>
+        <Route exact path={"/music/:id"}>
+          <CreateMusicPage />
         </Route>
         <Route >
           <ErrorPage />
