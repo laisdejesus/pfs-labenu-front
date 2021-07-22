@@ -3,9 +3,11 @@ import useForm from '../../hooks/useForm'
 import { useHistory } from 'react-router-dom'
 import {goToSignUp} from "../../routes/coordinator"
 import { signup } from '../../services/user'
+import useUnprotectedPage from '../../hooks/useUnprotectedPage'
 
 
 const SignUpPage = () => {
+  useUnprotectedPage()
   const [form, onChange, clear] = useForm({ email: "", password: "" })
   const history = useHistory()
 
