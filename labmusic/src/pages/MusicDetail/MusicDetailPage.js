@@ -10,19 +10,7 @@ const MusicDetailPage = () => {
   const params = useParams()
 
   const music = useRequestData({}, `${BASE_URL}/music/${params.id}`)
-  console.log(music.music.title)
-  const genresResult = music.genreMusicResult[0]
-  console.log(genresResult)
-
-  const genre = genresResult.map ((genre) => {
-    return (
-      <div key={genre.genre_id}>
-        {genre.genre_id}
-
-      </div>
-    )
-  })
-
+  console.log(music)
  
 
   return (
@@ -33,16 +21,37 @@ const MusicDetailPage = () => {
           {music.music.title}
           {music.music.file_string}
           {music.music.album_id}
-          {genre}
+          {music.albumMusic.name_album}
+          
         </div>
         :
         <h1>Carregando</h1>
-  
-      }
-      
+      }       
         
     </div>
   )
 }
 
 export default MusicDetailPage;
+
+
+
+  // const genresResult = music.genreMusicResult[0]
+  // console.log(genresResult)
+
+  // const genre = music.genreMusicResult.map ((genre) => {
+  //   return (
+  //     <div key={genre.genre_id}>
+  //       {genre.genre_id}
+
+  //     </div>
+  //   )
+  // })
+
+  {/* /* {genre ?
+      <div>
+        {genre}
+      </div>
+      :
+      <h1>Carregando</h1>
+      } */} 
