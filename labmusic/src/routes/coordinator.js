@@ -11,7 +11,7 @@ export const goToSignUp = (history) => {
 };
   
 export const goToMusicDetail = (history, id) => {
-    history.push(`/pokemon/${id}`)
+    history.push(`/music/${id}`)
 };
   
 export const goToCreateMusic = (history) => {

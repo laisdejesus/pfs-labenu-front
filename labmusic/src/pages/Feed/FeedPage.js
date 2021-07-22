@@ -13,10 +13,18 @@ const FeedPage = () => {
   const musics = useRequestData([], `${BASE_URL}/music/all`)
   console.log(musics)
 
+  const onClickCard = (id) => {
+    goToMusicDetail(history, id)
+  }
+
   const musicCards = musics.map((music) => {
     return (
-      <div key={music.title}>
+      <div key={music.id}>
         <p>{music.title}</p>
+        <p>{music.date}</p>
+        <button onClick={() => onClickCard(music.id)}>Ver detalhes </button>
+
+        
       </div>
     )
     
@@ -26,7 +34,7 @@ const FeedPage = () => {
     <div>
         Sou o FeedPage
 
-        <div onClick={() => goToMusicDetail(history)}> {musicCards} </div>
+        <div > {musicCards} </div>
     </div>
   )
 }
