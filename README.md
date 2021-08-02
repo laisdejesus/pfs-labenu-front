@@ -19,15 +19,16 @@ Aplicação que gerencie músicas através da criação de playlists.
 
 ##### Música
 - [x] Criação de Música;
-- [x] Lista de playlists;
-- [ ] Detalhe de música;
+- [x] Lista de músicas;
+- [ ] Lista de playlists;
+- [ ] Detalhe de música
 
 #### O que já foi feito e funciona:
-- Requisições dos endpoints (Cadastro, login, criação de música, Lista de playlists)
+- Requisições dos endpoints (Cadastro, login, criação de música, Lista de músicas)
 - Fluxo de páginas (Rotas)
 
 #### O que não funciona e/ou não foi feito ainda:
-- Requisições dos endpoints (Detalhe de música)
+- Requisições dos endpoints (Detalhe de música, Lista de playlists)
 - Estilização das páginas
 - Testes
 
