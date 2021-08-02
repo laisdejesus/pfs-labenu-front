@@ -1,4 +1,4 @@
-## Labmusic - Projeto FullStack 1 (Front end)
+## Labmusic - Projeto FullStack 1 (Frontend)
 
 Projeto de final de curso da Labenu.
 Aplicação que gerencie músicas através da criação de playlists.
