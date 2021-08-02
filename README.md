@@ -3,23 +3,24 @@
 Projeto de final de curso da Labenu.
 Aplicação que gerencie músicas através da criação de playlists.
 
-#### Status: Ainda em andamento
+#### Status: 🚧 Em construção 
 
 #### Stacks e libs utilizadas:
+- Javascript;
 - React.js;
 - Styled-Components;
 - Axios;
-- Router.
+- Router
 
-#### Fluxo de Telas
+#### Features
 ##### Usuário
-- Cadastro;
-- Login
+- [x] Cadastro;
+- [x] Login
 
 ##### Música
-- Criação de Música;
-- Lista de playlists;
-- Detalhe de música;
+- [x] Criação de Música;
+- [x] Lista de playlists;
+- [ ] Detalhe de música;
 
 #### O que já foi feito e funciona:
 - Requisições dos endpoints (Cadastro, login, criação de música, Lista de playlists)
@@ -28,10 +29,10 @@ Aplicação que gerencie músicas através da criação de playlists.
 #### O que não funciona e/ou não foi feito ainda:
 - Requisições dos endpoints (Detalhe de música)
 - Estilização das páginas
+- Testes
 
 #### Instalação:
 1) Git clone <link do repo>
 2) npm install
 3) npm run start
-
 
